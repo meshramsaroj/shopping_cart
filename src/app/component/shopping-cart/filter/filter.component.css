@@ -1,0 +1,7 @@
+.filter {
+  font-size: small;
+}
+
+.card ,.form-control ,.btn {
+  border-radius: 0;
+}
