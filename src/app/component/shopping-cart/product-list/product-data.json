@@ -1,50 +1,74 @@
 [
-    {   "id": 1,
-        "image" : "/../../../../assets/dress1.jpg",
-        "price" :1000,
-        "fabric" : "Cotton",
-        "tips": "Home Wash or Hand Wash or Machine Wash"
+    {
+        "id": 1,
+        "product_id": 1,
+        "image": "/../../../../assets/dress1.jpg",
+        "price": 1000,
+        "fabric": "Cotton",
+        "tips": "Home Wash or Hand Wash or Machine Wash",
+        "quantity": 4
     },
-    {   "id": 2,
-        "image" : "/../../../../assets/kurti3.jpg",
-        "price" :800,
-        "fabric" : "Rayon",
-        "tips": " machine wash"
+    {
+        "id": 2,
+        "product_id": 3,
+        "image": "/../../../../assets/kurti3.jpg",
+        "price": 800,
+        "fabric": "Rayon",
+        "tips": " machine wash",
+        "quantity": 4
     },
-    {   "id": 3,
-        "image" : "/../../../../assets/kurti5.jpg",
-        "price" :1200,
-        "fabric" : "Cotton",
-        "tips": "Home Wash or Hand Wash or Machine Wash"
+    {
+        "id": 3,
+        "product_id": 6,
+        "image": "/../../../../assets/kurti5.jpg",
+        "price": 1200,
+        "fabric": "Cotton",
+        "tips": "Home Wash or Hand Wash or Machine Wash",
+        "quantity": 3
     },
-    {   "id": 1,
-        "image" : "/../../../../assets/kurti1.jpg",
-        "price" :900,
-        "fabric" : "pure Cotton",
-        "tips": "Home Wash or Hand Wash or Machine Wash"
+    {
+        "id": 4,
+        "product_id": 9,
+        "image": "/../../../../assets/kurti1.jpg",
+        "price": 900,
+        "fabric": "pure Cotton",
+        "tips": "Home Wash or Hand Wash or Machine Wash",
+        "quantity": 6
     },
-    {   "id": 4,
-        "image" : "/../../../../assets/jsuit1.jpeg",
-        "price" :1500,
-        "fabric" : "Synthetic",
-        "tips": " Machine wash"
+    {
+        "id": 5,
+        "product_id": 2,
+        "image": "/../../../../assets/jsuit1.jpeg",
+        "price": 1500,
+        "fabric": "Synthetic",
+        "tips": " Machine wash",
+        "quantity": 8
     },
-    {   "id": 5,
-        "image" : "/../../../../assets/dress2.jpg",
-        "price" :3000,
-        "fabric" : "Polyester",
-        "tips": "Gentle Wash"
+    {
+        "id": 6,
+        "product_id": 4,
+        "image": "/../../../../assets/dress2.jpg",
+        "price": 3000,
+        "fabric": "Polyester",
+        "tips": "Gentle Wash",
+        "quantity": 5
     },
-    {   "id": 6,
-        "image" : "/../../../../assets/dress3.jpg",
-        "price" :2000,
-        "fabric" : "Bangalore Satin",
-        "tips": "Dry Clean"
+    {
+        "id": 7,
+        "product_id": 8,
+        "image": "/../../../../assets/dress3.jpg",
+        "price": 2000,
+        "fabric": "Bangalore Satin",
+        "tips": "Dry Clean",
+        "quantity": 9
     },
-     {   "id": 7,
-        "image" : "/../../../../assets/kurti7.jpg",
-        "price" :2200,
-        "fabric" : "Georgette",
-        "tips": "Dry clean only"
+    {
+        "id": 8,
+        "product_id": 10,
+        "image": "/../../../../assets/kurti7.jpg",
+        "price": 2200,
+        "fabric": "Georgette",
+        "tips": "Dry clean only",
+        "quantity": 1
     }
 ]

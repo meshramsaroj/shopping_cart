@@ -3,15 +3,24 @@
     <strong>Cart</strong>
   </div>
 
-  <ul class="list-group">
-    <li class="list-group-item" *ngFor="let i of [1, 2, 3, 4, 5]">
-      <app-cart-item></app-cart-item>
-    </li>
-    <li class="list-group-item">
-      <strong>Total : {{ 3500 | currency:'INR' }}</strong>
-    </li>
+  <div *ngIf="cartItem.length === 0" class="card-text alert alert-info">
+    Your cart is Empty
+  </div>
 
+  <ul *ngIf="cartItem.length > 0" class="list-group">
+    <li class="list-group-item" *ngFor="let item of cartItem">
+      <app-cart-item [itemData]="item"></app-cart-item>
+      <button
+        type="button"
+        class="close"
+        aria-label="Close"
+        (click)="deleteFromCart(item)"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </li>
+    <li class="list-group-item bg-primary text-light">
+      <strong>Total : {{ cartTotal | currency: "INR" }}</strong>
+    </li>
   </ul>
-
-
 </div>
