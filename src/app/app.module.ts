@@ -12,6 +12,8 @@ import { CartComponent } from './component/shopping-cart/cart/cart.component';
 import { ShoppingCartComponent } from './component/shopping-cart/shopping-cart.component';
 import { CartItemComponent } from './component/shopping-cart/cart/cart-item/cart-item.component';
 import { ProductListItemComponent } from './component/shopping-cart/product-list/product-list-item/product-list-item.component';
+import { ProductDetailsComponent } from './component/shopping-cart/product-list/product-details/product-details.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,10 +27,12 @@ import { ProductListItemComponent } from './component/shopping-cart/product-list
     CartComponent,
     CartItemComponent,
     ProductListItemComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

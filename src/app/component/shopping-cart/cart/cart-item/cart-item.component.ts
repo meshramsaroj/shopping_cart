@@ -1,5 +1,6 @@
-import { Component, OnInit ,InputDecorator, Input} from '@angular/core';
-import { MessangerService } from 'src/app/service/messanger/messanger.service';
+import { Component, OnInit, InputDecorator, Input } from '@angular/core';
+import { MessangerService } from '../../../../service/messanger/messanger.service';
+import { CartService } from '../../../../service/cart/cart.service';
 
 @Component({
   selector: 'app-cart-item',
@@ -8,19 +9,20 @@ import { MessangerService } from 'src/app/service/messanger/messanger.service';
 })
 export class CartItemComponent implements OnInit {
 
-  @Input() itemData : any;
+  @Input() itemData: any;
+  totalItemPrice = 0;
   constructor(
-    private msg : MessangerService
+    private msg: MessangerService,
+    private cartService: CartService
   ) { }
 
   ngOnInit(): void {
+    this.totalItemPrice = (this.itemData.product.price * this.itemData.id);
+
   }
 
-  deleteFromCart(itemData){
+  deleteFromCart(itemData) {
     this.msg.sendMsg(itemData);
-    // console.log(itemData);
-
-
 
   }
 

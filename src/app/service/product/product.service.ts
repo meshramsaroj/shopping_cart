@@ -1,19 +1,21 @@
 import { Injectable } from '@angular/core';
-import * as data from '../../component/shopping-cart/product-list/product-data.json';
 import { ProductInterface } from '../..//interface/product.js';
-// import { Product } from 'src/app/model/product.js';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { productUrl } from 'src/config/api.js';
 
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductService {
-  Product : ProductInterface ;
 
-  constructor() { }
+  constructor(
+    private http : HttpClient
+  ) { }
 
-  getProductList() {
-    this.Product = (data as any).default;
-    return this.Product ;
+  getProductList():Observable<ProductInterface> {
+   return this.http.get<ProductInterface>(productUrl);
+
   }
 }

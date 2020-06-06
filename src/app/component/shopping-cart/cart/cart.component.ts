@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { MessangerService } from 'src/app/service/messanger/messanger.service';
-import { ProductInterface } from 'src/app/interface/product';
+import { MessangerService } from '../../../service/messanger/messanger.service';
+import { ProductInterface } from '../../../interface/product';
+import { CartService } from '../../../service/cart/cart.service';
+import { CartItem } from '../../../interface/cart.item';
 
 @Component({
   selector: 'app-cart',
@@ -12,44 +14,46 @@ export class CartComponent implements OnInit {
   cartTotal = 0;
 
   constructor(
-    private msgService: MessangerService
+    private msg: MessangerService,
+    private cartService: CartService
   ) { }
 
   ngOnInit(): void {
-    this.msgService.getMsg().subscribe((product: ProductInterface) => {
-      this.addProductToCart(product);
+    this.handleSubscription();
+    this.loadToCart();
+
+  }
+
+  handleSubscription() {
+    this.msg.getMsg().subscribe((product: ProductInterface) => {
+      this.loadToCart();
     })
 
+  }
+
+  loadToCart() {
+    this.cartService.getCartItem().subscribe((item: CartItem[]) => {
+      this.cartItem = item;
+      this.calculateTotal();
+
+    })
 
   }
 
-  addProductToCart(product: ProductInterface) {
-    let productExist = false;
-    for (let i in this.cartItem) {
-      if (this.cartItem[i].productId === product.product_id) {
-        this.cartItem[i].quantity++;
-        productExist = true;
-        break;
-      }
-    }
-
-    if (!productExist) {
-      this.cartItem.push({
-        productId: product.product_id,
-        productPrice: product.price,
-        quantity: 1,
-        productTips: product.tips
-      });
-    }
+  calculateTotal() {
     this.cartTotal = 0;
     this.cartItem.forEach(item => {
-      this.cartTotal += (item.productPrice * item.quantity);
+      this.cartTotal += (item.product.price * item.product.quantity);
     });
+
   }
 
-  deleteFromCart(product) {
-    this.cartItem = this.cartItem.filter(item =>  item !== product);
-    this.cartTotal=  this.cartTotal - product.productPrice;
+  deleteFromCart(productId) {
+    this.cartService.removeFromCart(productId).subscribe((item) => {
+
+    })
+    this.cartItem = this.cartItem.filter(item => item.product !== productId.product);
+    this.cartTotal = this.cartTotal - productId.product.price;
 
   }
 

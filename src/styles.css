@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+.fa-heart {
+  color: palevioletred;
+  cursor: pointer;
+}
+/*
+.fa,
+.fa-heart::selection {
+    color: palevioletred;
+    cursor: pointer;
+  } */
+

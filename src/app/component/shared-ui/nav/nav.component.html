@@ -4,11 +4,13 @@
   <div class="mr-md-auto ">
     <app-header></app-header>
   </div>
+
   <nav class="my-2 my-md-0 mr-md-3">
     <!-- <a class="p-2 text-dark" href="#">Features</a>
     <a class="p-2 text-dark" href="#">Enterprise</a>
     <a class="p-2 text-dark" href="#">Support</a>
     <a class="p-2 text-dark" href="#">Pricing</a> -->
   </nav>
-  <a class="btn btn-outline-light" href="#">Sign up</a>
+  <a *ngIf="count === 0" class="btn btn-outline-light" href="#">Sign Up </a>
+  <span *ngIf="count>0" class="text-light font-weight-bold">Wishlist : {{count}}</span>
 </div>

@@ -1,7 +1,7 @@
-<span>{{ itemData.productPrice }}</span> * <span>{{ itemData.quantity }}</span
+<span>{{ itemData.product.price }}</span> * <span>{{ itemData.id }}</span
 >:
 <span
   ><strong>{{
-    itemData.productPrice * itemData.quantity | currency: "INR"
+    totalItemPrice | currency: "INR"
   }}</strong>
 </span>
