@@ -1,0 +1,161 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "product_id": 1,
+      "name": "Cotton Readymade Salwar Suit",
+      "type": "Ethnic Wear",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71h01LEjOOL._UL1440_.jpg",
+      "price": 600,
+      "fabric": "Cotton",
+      "tips": "Home Wash or Hand Wash or Machine Wash",
+      "quantity": 4
+    },
+    {
+      "id": 2,
+      "product_id": 2,
+      "name": "Digital Printed Flare Long Gown Dress ",
+      "type": "Ethnic Wear",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61aFNyP1dIL._UL1100_.jpg",
+      "price": 1000,
+      "fabric": "Rayon",
+      "tips": "Home Wash or Hand Wash or Machine Wash",
+      "quantity": 4
+    },
+    {
+      "id": 3,
+      "product_id": 3,
+      "name": " Long Embroidered Kurti",
+      "type": "Ethnic Wear",
+      "image": "https://m.media-amazon.com/images/I/61AxNhExZTL._AC_UL320_.jpg",
+      "price": 789,
+      "fabric": "Cotton",
+      "tips": "Home Wash or Hand Wash or Machine Wash",
+      "quantity": 4
+    },
+    {
+      "id": 4,
+      "product_id": 4,
+      "name": "Regular Fit Top and T-Shirt",
+      "type": "Tops",
+      "image": "https://m.media-amazon.com/images/I/61zYksV9l0L._AC_UL320_.jpg",
+      "price": 269,
+      "fabric": "Cotton",
+      "tips": "Home Wash or Hand Wash or Machine Wash",
+      "quantity": 4
+    },
+    {
+      "id": 5,
+      "product_id": 5,
+      "name": "Round Neck Printed Top",
+      "type": "Tops",
+      "image": "https://m.media-amazon.com/images/I/71HqLrWZ9jL._AC_UL320_.jpg",
+      "price": 500,
+      "fabric": "Cotton",
+      "tips": "Home Wash or Hand Wash or Machine Wash",
+      "quantity": 4
+    },
+    {
+      "id": 6,
+      "product_id": 6,
+      "name": "Knee Length Dress",
+      "type": "Western Wear",
+      "image": "https://m.media-amazon.com/images/I/61QenrhFbNL._AC_UL320_.jpg",
+      "price": 900,
+      "fabric": "Cotton",
+      "tips": "Home Wash or Hand Wash or Machine Wash",
+      "quantity": 4
+    },
+    {
+      "id": 7,
+      "product_id": 7,
+      "name": "Jumpsuit with top",
+      "type": "Western Wear",
+      "image": "https://m.media-amazon.com/images/I/4109ESivWZL._AC_UL320_.jpg",
+      "price": 690,
+      "fabric": "Cotton",
+      "tips": "Home Wash or Hand Wash or Machine Wash",
+      "quantity": 4
+    },
+    {
+      "id": 8,
+      "product_id": 8,
+      "name": "Long Semi-Stitched Gown",
+      "type": "Ethnic Wear",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/711JcdNUhJL._UL1500_.jpg",
+      "price": 2000,
+      "fabric": "Faux Georgette",
+      "tips": "Home Wash or Hand Wash or Machine Wash",
+      "quantity": 4
+    },
+    {
+      "id": 9,
+      "product_id": 9,
+      "name": "Anarkali Gown",
+      "type": "Ethnic Wear",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/81S2LS1zsoL._UL1500_.jpg",
+      "price": 1000,
+      "fabric": "Cotton",
+      "tips": "Home Wash or Hand Wash or Machine Wash",
+      "quantity": 4
+    }
+  ],
+  "wishlist": [
+    {
+      "id": 1
+    },
+    {
+      "id": 3
+    }
+
+  ],
+  "cart": [
+    {
+      "product": {
+        "id": 1,
+        "product_id": 1,
+        "name": "Cotton Readymade Salwar Suit",
+        "type": "Ethnic Wear",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/71h01LEjOOL._UL1440_.jpg",
+        "price": 600,
+        "fabric": "Cotton",
+        "tips": "Home Wash or Hand Wash or Machine Wash",
+        "quantity": 4
+      },
+      "id": 3
+    },
+    {
+      "product": {
+        "id": 1,
+        "product_id": 1,
+        "name": "Cotton Readymade Salwar Suit",
+        "type": "Ethnic Wear",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/71h01LEjOOL._UL1440_.jpg",
+        "price": 600,
+        "fabric": "Cotton",
+        "tips": "Home Wash or Hand Wash or Machine Wash",
+        "quantity": 4
+      },
+      "id": 4
+    }
+
+  ],
+  "favorite": [],
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
